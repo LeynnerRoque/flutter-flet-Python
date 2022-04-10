@@ -7,8 +7,8 @@ conection = pymysql.connect(
     host='localhost',
     port=3306,
     user='root',
-    password='*****',
-    database='database',
+    password='roque1989',
+    database='appjobs',
     autocommit=True
 )
 
