@@ -45,13 +45,13 @@ def add_peoples():
 
 def update_peoples():
         db = credenciaisBanco
-        termobusca = input("Digite o code:")
+        termobusca = input("Digite o Nome: ")
 
         sql_update = ""
 
         cursor = database.database_opening.operator_db()
         id = ""
-        cursor.execute("select p.id from peoples p where p.identify = " + termobusca + " ")
+        cursor.execute("select p.id from peoples p where p.name = '" + termobusca + "' ")
 
         retorno = cursor.fetchone()
 
@@ -137,11 +137,11 @@ def add_people_on_work():
         id = objeto
 
     #Informe People
-    termobusca_people = input("Digite o code do Requerente:")
+    termobusca_people = input("Digite o code do Requerente: ")
 
     cursor = db.cursor()
     id_People = ""
-    cursor.execute("select p.id from peoples p where p.identify = " + termobusca_people + " ")
+    cursor.execute("select p.id from peoples p where p.id = " + termobusca_people + " ")
     retorno_people = cursor.fetchone()
 
     for i in retorno_people:
@@ -149,7 +149,7 @@ def add_people_on_work():
         id_People = objeto
 
     cursor_update = db.cursor()
-    cursor_update.execute("update peoples set work_id = "+str(id)+" where id = " + str(id_People) + "")
+    cursor_update.execute("update peoples set job_id = "+str(id)+" where id = " + str(id_People) + "")
     #database.database_opening.operator_db().commit()
 
 
@@ -159,11 +159,11 @@ def add_people_on_work():
 def add_people_on_local():
     #db = credenciaisBanco
     #Informe Local
-    termobusca = input("Digite o cod da Location:")
+    termobusca = input("Digite o Postal Code da Location: ")
 
     cursor = database.database_opening.operator_db()
     id = ""
-    cursor.execute("select l.id from location l where l.id = " + termobusca + " ")
+    cursor.execute("select l.id from location l where l.postal_code = " + termobusca + " ")
     retorno = cursor.fetchone()
 
     for i in retorno:
@@ -175,7 +175,7 @@ def add_people_on_local():
 
     cursor = database.database_opening.operator_db()
     id_People = ""
-    cursor.execute("select p.id from peoples p where p.identify = " + termobusca_people + " ")
+    cursor.execute("select p.id from peoples p where p.id = " + termobusca_people + " ")
     retorno_people = cursor.fetchone()
 
     for i in retorno_people:
@@ -183,7 +183,7 @@ def add_people_on_local():
         id_People = objeto
 
     cursor_update = database.database_opening.operator_db()
-    cursor_update.execute("update peoples set region_id = "+str(id)+" where id = " + str(id_People) + "")
+    cursor_update.execute("update peoples set location_id = "+str(id)+" where id = " + str(id_People) + "")
     #database.database_opening.operator_db().commit()
 
 

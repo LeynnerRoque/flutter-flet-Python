@@ -38,7 +38,7 @@ while opcao != 0:
             elif opcao_people == '4':
                 people.add_people_on_local()
             elif opcao_people == '5':
-                people.select_all_peoples()
+                print(people.select_all())
             elif opcao_people == '0':
                 break
 
@@ -59,11 +59,11 @@ while opcao != 0:
             if opcao_job == '1':
                 job.create_job()
             elif opcao_job == '2':
-                job.update_job()
+                job.update_jobs()
             elif opcao_job == '3':
-                job.add_job_enterprise()
+                job.add_job_on_enterprise()
             elif opcao_job == '4':
-                job.select_all_jobs()
+                print(job.select_all())
             if opcao_job == '0':
                 break
     elif opcao == '3':
@@ -101,11 +101,11 @@ while opcao != 0:
             opcao_local = input('Entre com a Opcao: ')
 
             if opcao_local == '1':
-                enterprise.create_enterprise()
+                local.create_location()
             elif opcao_local == '2':
-                enterprise.update_enterprise()
+                local.update_local()
             elif opcao_local == '3':
-                enterprise.select_all_enterprise()
+                print(local.select_all())
             if opcao_local == '0':
                 break
 

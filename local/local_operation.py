@@ -7,7 +7,7 @@ def select_all():
     #db = credenciaisBanco
     cursor = database.database_opening.operator_db()
 
-    cursor.execute("select * from job")
+    cursor.execute("select * from location")
     resposta = cursor.fetchall()
 
     lista = []

@@ -29,14 +29,14 @@ def create_job():
 
     cursor = database.database_opening.operator_db()
     id = ""
-    cursor.execute("select e.id from enterprise e where e.identify = " + enterprise + " ")
+    cursor.execute("select e.id from enterprise e where e.foundation_name = '" + enterprise + "' ")
     retorno = cursor.fetchone()
 
     for i in retorno:
         objeto = i
         id = objeto
 
-    cursor.execute("insert into job (title,description,salry,enterprises_id) values('" + title + "','" + title + "'," + str(
+    cursor.execute("insert into job (title,description,salary,enterprise_id) values('" + title + "','" + title + "'," + str(
             salary) + "," + str(id) +") ")
 
     #database.database_opening.operator_db().commit()
@@ -69,7 +69,7 @@ def update_jobs():
         sql_update = "update job set title = '"+novo_title+"' where id = "+str(id)
     elif opcao == '2':
         novo_salary = input("Digite o novo salary: ")
-        sql_update = "update job set salry = '" + novo_salary + "' where id = " + str(id)
+        sql_update = "update job set salary = '" + novo_salary + "' where id = " + str(id)
     elif opcao == '3':
         nova_empresa = input("Digite o identify da empresa: ")
 
@@ -115,7 +115,7 @@ def add_job_on_enterprise():
         objeto = i
         id_enterprise = objeto
 
-    sql_update = "update job set enterprises_id = "+str(id_enterprise)+" where id = "+str(id)
+    sql_update = "update job set enterprise_id = "+str(id_enterprise)+" where id = "+str(id)
 
     cursor_update = database.database_opening.operator_db()
     cursor_update.execute(sql_update)
@@ -131,7 +131,7 @@ def quantidadePorJob():
     valores = []
     cursor.execute("select count(p.id), j.title from appjobs.peoples p, appjobs.job j, appjobs.enterprise e "
                    "where p.work_id = j.id "
-                   "and j.enterprises_id = e.id "
+                   "and j.enterprise_id = e.id "
                    "and e.foundation_name  = '" + termo_busca + "' group by j.id")
     retorno = cursor.fetchall()
 
