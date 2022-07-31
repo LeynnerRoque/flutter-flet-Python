@@ -7,8 +7,8 @@ conection = pymysql.connect(
     host='localhost',
     port=3306,
     user='root',
-    password='roque1989',
-    database='appjobs',
+    password='*****',
+    database='database',
     autocommit=True
 )
 
@@ -16,7 +16,7 @@ credenciaisBanco = mysql.connector.connect(
         host='localhost',
         user='root',
         password='******',
-        database='appjobs',
+        database='database',
         auth_plugin='mysql_native_password'
     )
 
