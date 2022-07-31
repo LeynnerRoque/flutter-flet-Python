@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85bc80ca-d0c5-41a1-9a03-7921764c20f5" name="Default Changelist" comment="" />
+    <list default="true" id="85bc80ca-d0c5-41a1-9a03-7921764c20f5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/database_opening.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/database_opening.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +41,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.execute">
+  <component name="RunManager" selected="Python.pie_chart">
     <configuration name="database_opening" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="appjobs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pie_chart" />
         <item itemvalue="Python.execute" />
         <item itemvalue="Python.enterprise_operation" />
         <item itemvalue="Python.peoples_operation" />
         <item itemvalue="Python.database_opening" />
-        <item itemvalue="Python.pie_chart" />
       </list>
     </recent_temporary>
   </component>
