@@ -9,6 +9,6 @@ def select_all_enterprise():
 grupos = ['Produto A', 'Produto B', 'Produto C']
 valores = [1, 10, 100]
 plt.bar(grupos, valores)
-#plt.show()
+plt.show()
 
 print(select_all_enterprise())

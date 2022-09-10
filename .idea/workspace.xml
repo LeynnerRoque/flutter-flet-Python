@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85bc80ca-d0c5-41a1-9a03-7921764c20f5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/pie_chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/charts/pie_chart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/database_opening.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/database_opening.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +22,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main/execute.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/peoples/peoples_operation.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/management/_opMain.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/database/database_opening.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/main/execute.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1bSBebnOAu91X1UBuf0SaVwBReW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
